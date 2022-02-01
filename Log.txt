@@ -1,1 +1,10 @@
 1. $ git clone https://github.com/jkey20/Lab.git
+원격 저장소 클론
+2. $ cd Lab
+폴더 이동
+3. $ git add Log.txt
+프로젝트에 Log파일 추가
+4. $ git commit -m "Add text File Log.txt"
+파일 커밋 "" 부분에서 커밋 메시지 작성
+5. $ git push
+원격 저장소에 푸쉬 수행
