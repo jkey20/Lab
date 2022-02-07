@@ -8,3 +8,52 @@
 파일 커밋 "" 부분에서 커밋 메시지 작성
 5. $ git push
 원격 저장소에 푸쉬 수행
+6. $ git status
+<결과>
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+변경사항이 생겼지만 스테이지에 올라가지 않은 Log.txt 파일이 있음을 알려줌
+File.txt 파일이 추가되었음을 알려줌
+
+7. $ git add File.txt
+
+8. $ git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Log.txt
+
+File.txt 추가됨 
+
+9. $ git add Log.txt
+
+10. $ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File.txt
+        modified:   Log.txt
+
+2개 다 정상적으로 추가됨
+
